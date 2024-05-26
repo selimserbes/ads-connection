@@ -26,3 +26,15 @@ After installing the Rust programming language from the [Rust official website](
 cargo build
 ```
 
+## Usage
+
+To use the project:
+
+- Change directory to the project directory in your terminal or command prompt.
+- Compile and run the project by executing the following command:
+
+```shell
+cargo run
+```
+
+- The `main.rs` file written in Rust first establishes a route using the `pyads` library written in Python. Then, it connects to the PLC using the `ads-rs` library and performs data read/write operations.
