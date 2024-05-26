@@ -8,6 +8,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
       .output()
       .expect("Failed to run Python script"); // Error message
 
+  if output.status.success() {
+    println!("Python script executed successfully: {:?}", output);
+  } else {
+    // Print an error message if the Python script failed
+    println!("Error: {:?}", output);
+  }
 
   Ok(())
 }
