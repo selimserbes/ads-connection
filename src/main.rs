@@ -29,6 +29,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
       return Err("PLC instance is not running".into());
     }
 
+    // Create a handle for a variable in the PLC ("GVL.VARIABLE")
+    let handle = ads::Handle::new(device, "GVL.VARIABLE")?;
+
     println!("Python script executed successfully: {:?}", output);
   } else {
     // Print an error message if the Python script failed
