@@ -24,6 +24,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create an object representing the PLC device (using AmsAddr)
     let device = client.device(ads::AmsAddr::new(plc_ams.into(), 851));
 
+    // Check the PLC state (is it running?)
+    if device.get_state()?.0 != ads::AdsState::Run {
+      return Err("PLC instance is not running".into());
+    }
+
     println!("Python script executed successfully: {:?}", output);
   } else {
     // Print an error message if the Python script failed
