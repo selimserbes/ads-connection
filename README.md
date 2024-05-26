@@ -17,3 +17,12 @@ Install the `pyads` library by running the following command in your terminal or
 ```shell
 pip install pyads
 ```
+
+### ads-rs Installation
+
+After installing the Rust programming language from the [Rust official website](https://www.rust-lang.org/), add the `ads` library to your Rust project's `Cargo.toml` file. Then, run the following command to compile:
+
+```shell
+cargo build
+```
+
