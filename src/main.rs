@@ -32,6 +32,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create a handle for a variable in the PLC ("GVL.VARIABLE")
     let handle = ads::Handle::new(device, "GVL.VARIABLE")?;
 
+    // Read a value from the PLC (of type u32)
+    let value: u32 = handle.read_value()?;
+    println!("GVL.VARIABLE old value is {}", value);
+
     println!("Python script executed successfully: {:?}", output);
   } else {
     // Print an error message if the Python script failed
