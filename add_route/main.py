@@ -11,6 +11,8 @@ plc_ams = "192.168.2.3.1.1"  # AMS address of the PLC
 plc_username = "Administrator"
 plc_password = "1"
 
+# Define the name for the route to be added
+route_name = "plc"
 
 
 
