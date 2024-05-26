@@ -4,3 +4,9 @@ This project enables connection to Beckhoff TwinCAT PLCs using the ADS (Automati
 
 **Note:** This project only works on the **Linux** operating system.
 
+## Installation
+
+### Python Installation
+
+Download and install Python 3.x version from [Python.org](https://www.python.org/).
+
