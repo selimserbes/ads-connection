@@ -38,3 +38,11 @@ cargo run
 ```
 
 - The `main.rs` file written in Rust first establishes a route using the `pyads` library written in Python. Then, it connects to the PLC using the `ads-rs` library and performs data read/write operations.
+
+## Contribution
+
+Contributions are welcome! Please open a pull request or submit an issue.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
