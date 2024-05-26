@@ -40,6 +40,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // let value_to_write: u32 = 1;
     // handle.write_value(&value_to_write)?;
 
+    // Read again to check the change
+    // let value: u32 = handle.read_value()?;
+    // println!("GVL.VARIABLE new value is {}", value);
+
     println!("Python script executed successfully: {:?}", output);
   } else {
     // Print an error message if the Python script failed
