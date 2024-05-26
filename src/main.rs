@@ -34,7 +34,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // Read a value from the PLC (of type u32)
     let value: u32 = handle.read_value()?;
-    println!("GVL.VARIABLE old value is {}", value);
+    println!("The old value of GVL.VARIABLE is {}", value);
 
     // Write a value to the PLC
     // let value_to_write: u32 = 1;
@@ -42,7 +42,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // Read again to check the change
     // let value: u32 = handle.read_value()?;
-    // println!("GVL.VARIABLE new value is {}", value);
+    // println!("The new value of GVL.VARIABLE is {}", value);
 
     println!("Python script executed successfully: {:?}", output);
   } else {
