@@ -10,3 +10,10 @@ This project enables connection to Beckhoff TwinCAT PLCs using the ADS (Automati
 
 Download and install Python 3.x version from [Python.org](https://www.python.org/).
 
+### pyads Installation
+
+Install the `pyads` library by running the following command in your terminal or command prompt:
+
+```shell
+pip install pyads
+```
