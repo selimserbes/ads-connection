@@ -14,6 +14,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
       .expect("Failed to run Python script"); // Error message
 
   if output.status.success() {
+    // Create an ADS client if the Python script ran successfully
+    let client = ads::Client::new(
+        (plc_ip, ads::PORT),
+        ads::Timeouts::none(),
+        ads::Source::Auto,
+    )?;
+
     println!("Python script executed successfully: {:?}", output);
   } else {
     // Print an error message if the Python script failed
